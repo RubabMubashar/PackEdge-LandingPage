@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+  }
+
+@layer components {
+    .max-container {
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+    .color{
+        color:#556B2F;
+    }
+    .bg-custom{
+        background-color: #556B2F;
+    }
+    .bg-graph{
+      background-image: url("assets/graph.png");
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    .bg-product{
+      background-image: url("assets/Product.jpeg");
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .bg-circle{
+      background-image: url("assets/circle.jpeg");
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .input-text{
+      background: #eeecec;
+      height: 65px;
+      color: black;
+    }
+    input::placeholder{
+      padding-left: 14px;
+      color: #888888;  /* Placeholder color */
+      font-size: 18px; 
+      font-family:  "Lato", sans-serif;
+    }
+    .min-h-custom{
+      min-height: 80vh;
+    }
+    .svg-layer{
+      transform: rotate(180deg);
+    }
+    .svg-color{
+      color: white;
+    }
+    
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply text-slate-gray text-lg leading-7;
+  }
+}
+  
