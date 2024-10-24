@@ -7,5 +7,5 @@ This project is a clean and modern landing page designed for a backpack brand. <
 <li>Fully responsive design</li>
 <li>Tailored for a smooth user experience on all devices</li>
 <li>Minimalist layout with focus on product display</li>
-<li>Feel free to check it out:)</li>
+<li>Feel free to check it out :)</li>
 </ul>
